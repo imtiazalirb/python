@@ -401,6 +401,24 @@ for i in range(n-1):
     for j in range(n-i-1):
         print(j+1,end="")
     print()
+
+"""
+Pattern
+
+          *
+         * * 
+        *   * 
+       *     * 
+      * * * * *
+              
+"""
+n = int(input("Enter a number of n: "))
+for i in range(n-1):
+    print(" "*(n-i-1)+" *",end="")
+    if i>=1:
+        print(" "*(2*i-1)+"* ",end="")
+    print()
+print(n*' *')
         
     
     
